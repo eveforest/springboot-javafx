@@ -1,0 +1,18 @@
+#titlebarPane{
+    /*-fx-border-color: black;*/
+}
+#titlebarPane .button{
+    -fx-background-color: null;
+    -fx-pref-height: 20;
+    -fx-pref-width: 20;
+}
+
+#winMiniButton{
+    -fx-graphic: url("../../images/button/win_mini.png");
+}
+#winMaxButton{
+    -fx-graphic: url("../../images/button/win_max.png");
+}
+#winCloseButton{
+    -fx-graphic: url("../../images/button/win_close.png");
+}

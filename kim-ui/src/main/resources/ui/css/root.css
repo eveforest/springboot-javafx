@@ -1,0 +1,82 @@
+.root{
+    /*-fx-background-image: url("../images/background.jpg");*/
+}
+
+#leftNavigationPane{
+    -fx-background-color: #1570c8;
+}
+#leftNavigationPane .button{
+    -fx-background-color: null;
+}
+
+#contentPane{
+    -fx-background-color: #85c0f9;
+}
+
+#homeButton {
+    -fx-graphic: url("../images/button/home.png");
+}
+#homeButton:hover {
+    -fx-graphic: url("../images/button/home_onclk.png");
+}
+#homeButton:focused {
+    -fx-graphic: url("../images/button/home_onclk.png");
+}
+#userButton {
+    -fx-graphic: url("../images/button/user.png");
+}
+#userButton:hover {
+    -fx-graphic: url("../images/button/user.png");
+}
+#userButton:focused {
+    -fx-graphic: url("../images/button/user.png");
+}
+#chatButton {
+    -fx-graphic: url("../images/button/chat.png");
+}
+#chatButton:hover {
+    -fx-graphic: url("../images/button/chat_onclk.png");
+}
+#chatButton:focused {
+    -fx-graphic: url("../images/button/chat_onclk.png");
+}
+#contactListButton {
+    -fx-graphic: url("../images/button/contactList.png");
+}
+#contactListButton:hover {
+    -fx-graphic: url("../images/button/contactList_onclk.png");
+}
+#contactListButton:focused {
+    -fx-graphic: url("../images/button/contactList_onclk.png");
+}
+#appshopButton {
+    -fx-graphic: url("../images/button/appshop.png");
+}
+#appshopButton:hover {
+    -fx-graphic: url("../images/button/appshop_onclk.png");
+}
+#appshopButton:focused {
+    -fx-graphic: url("../images/button/appshop_onclk.png");
+}
+#serviceButton {
+    -fx-graphic: url("../images/button/service.png");
+}
+#serviceButton:hover {
+    -fx-graphic: url("../images/button/service_onclk.png");
+}
+#serviceButton:focused {
+    -fx-graphic: url("../images/button/service_onclk.png");
+}
+#optionsButton {
+    -fx-graphic: url("../images/button/options.png");
+}
+#optionsButton:hover {
+    -fx-graphic: url("../images/button/options_onclk.png");
+}
+#optionsButton:focused {
+    -fx-graphic: url("../images/button/options_onclk.png");
+}
+
+
+
+

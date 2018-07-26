@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>kim</artifactId>
+        <groupId>com.kingyea</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>kim-core</artifactId>
+    <version>0.0.1</version>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>kim-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- kingyea-sso -->
+        <dependency>
+            <groupId>kingyea.sso</groupId>
+            <artifactId>kingyea-sso-client-android</artifactId>
+            <version>${kingyea.sso.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>kingyea.oauth</groupId>
+            <artifactId>kingyea-oauth-client-core</artifactId>
+            <version>${kingyea.oauth.version}</version>
+        </dependency>
+        <!-- kingyea im -->
+        <dependency>
+            <groupId>kingyea.ems</groupId>
+            <artifactId>kingyea-ems-common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <!-- cache -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+        <!-- common -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databind.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

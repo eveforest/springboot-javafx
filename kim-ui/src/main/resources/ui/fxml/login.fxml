@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.kingyea.kim.ui.controller.LoginController"
+          maxHeight="500" maxWidth="320" prefHeight="500.0" prefWidth="320.0" stylesheets="@../../ui/css/login.css" fx:id="loginPane">
+
+    <children>
+        <fx:include source="./panel/titlebar.fxml" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"></fx:include>
+        <GridPane  AnchorPane.topAnchor="50" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+            <rowConstraints>
+                <RowConstraints percentHeight="25"></RowConstraints>
+                <RowConstraints percentHeight="5"></RowConstraints>
+                <RowConstraints percentHeight="30"></RowConstraints>
+                <RowConstraints percentHeight="10"></RowConstraints>
+                <RowConstraints percentHeight="10"></RowConstraints>
+                <RowConstraints percentHeight="20"></RowConstraints>
+            </rowConstraints>
+            <columnConstraints>
+                <ColumnConstraints percentWidth="10"></ColumnConstraints>
+                <ColumnConstraints percentWidth="80"></ColumnConstraints>
+                <ColumnConstraints percentWidth="10"></ColumnConstraints>
+            </columnConstraints>
+            <children>
+                <Button fx:id="userPicBtn" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.halignment="CENTER"></Button>
+                <GridPane fx:id="loginInfoPane" GridPane.columnIndex="1" GridPane.rowIndex="2" >
+                    <rowConstraints>
+                        <RowConstraints percentHeight="25"></RowConstraints>
+                        <RowConstraints percentHeight="25"></RowConstraints>
+                        <RowConstraints percentHeight="25"></RowConstraints>
+                        <RowConstraints percentHeight="25"></RowConstraints>
+                    </rowConstraints>
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="100"></ColumnConstraints>
+                    </columnConstraints>
+                    <children>
+                        <Label text="请输入账号：" GridPane.columnIndex="0" GridPane.rowIndex="0"></Label>
+                        <TextField fx:id="userNameText" maxHeight="Infinity" GridPane.columnIndex="0" GridPane.rowIndex="1"></TextField>
+                        <Label text="请输入密码：" GridPane.columnIndex="0" GridPane.rowIndex="2"></Label>
+                        <PasswordField fx:id="passwordText" maxHeight="Infinity" GridPane.columnIndex="0" GridPane.rowIndex="3"></PasswordField>
+                    </children>
+                </GridPane>
+                <CheckBox text="记住密码?" GridPane.columnIndex="1" GridPane.rowIndex="3"  alignment="CENTER_LEFT"></CheckBox>
+                <HBox fx:id="loginBtnPane" GridPane.columnIndex="1" GridPane.rowIndex="4"  alignment="CENTER">
+                    <children>
+                        <Button fx:id="loginBtn" text="登录" onAction="#handleLoginAction" maxWidth="Infinity" maxHeight="Infinity" HBox.hgrow="ALWAYS"></Button>
+                    </children>
+                </HBox>
+
+            </children>
+
+        </GridPane>
+    </children>
+</AnchorPane>

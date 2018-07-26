@@ -1,0 +1,9 @@
+#browserPane{
+    -fx-background-color: orange;
+}
+
+.button{
+    -fx-background-color: null;
+    /*-fx-pref-height: 20;
+    -fx-pref-width: 20;*/
+}
